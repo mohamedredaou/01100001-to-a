@@ -1,7 +1,8 @@
-Binary → Letters (ASCII) – The Rule:
+ - Binary → Letters (ASCII) – The Rule:
+
 Each letter = 8 bits (1 byte)
 
-Example: 01000001 = A
+### Example: 01000001 = A
 If length % 8 ≠ 0 , add leading zeros to make it divisible by 8
 
 Split binary into groups of 8 bits
@@ -9,8 +10,9 @@ Split binary into groups of 8 bits
 Convert each group to decimal
 
 Use ASCII table to match each decimal number to a character
+ - Example:
+Binary: 101001001001010010
 
-Example: Binary: 101001001001010010
 Length = 18 → Add 6 zeros → 000000101001001001010010
 
 Split:
@@ -21,7 +23,8 @@ Split:
 
 01010010 = 82
 
-Use ASCII: 2 → STX (control char)
+Use ASCII:
+2 → STX (control char)
 
 146 → ’ (depends on encoding)
 
@@ -29,4 +32,6 @@ Use ASCII: 2 → STX (control char)
 
 Result: STX’R
 
-exaple
+### Simplified with pictures
+![image](image/image1.jpg)
+![image](image/image2.jpg)
